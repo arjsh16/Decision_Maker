@@ -5,7 +5,7 @@ This Python script helps you randomly select an option from a list of choices.
 ## Usage
 
 1. Clone the repository to your local machine:
-git clone: www.github.com/arjsh16/Decision_Maker
+git clone www.github.com/arjsh16/Decision_Maker
 
 2. Navigate to the directory
 3. Run the script
