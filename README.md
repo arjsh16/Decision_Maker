@@ -1,8 +1,13 @@
-# Random Choice Picker
+# Decision Maker
 
 This Python script helps you randomly select an option from a list of choices.
 
 ## Usage
+#### Either
+
+Download the exe file provided 
+
+#### or
 
 1. Clone the repository to your local machine:
 git clone www.github.com/arjsh16/Decision_Maker
