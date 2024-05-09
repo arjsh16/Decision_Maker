@@ -1,6 +1,6 @@
 
 # Import necessary modules
-from Rand import MyRandom  # Importing custom random module,also available in my other repository, you can alter the code and use the built in random library too
+from random import *       #Importing random to select an option
 from tkinter import *      # Importing tkinter for GUI
 import tkinter.messagebox  # Importing messagebox for displaying messages
 
@@ -26,9 +26,8 @@ def get_choice(entry):
 # Function to randomly choose and display one of the choices
 def give_output():
     global opt_list  
-    if opt_list:  
-        rd = MyRandom()                                   # Create an instance of MyRandom class
-        ind = int(rd.random_range(0, len(opt_list) - 1))  # Generate a random index within the range of choices
+    if opt_list:                                 
+        ind = randint(0, len(opt_list) - 1)  # Generate a random index within the range of choices
         Label(root, text=f"The choice made is {opt_list[ind]}").pack()  # Display the chosen choice
     else:
         Label(root, text="No choice has been made yet").pack()  # Display message if no choices are available
