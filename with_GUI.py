@@ -18,7 +18,7 @@ def get_val():
         e1 = Entry(root, bg='white', fg='black')         # Create an entry field for each choice
         e1.pack()
         Button(root, text="Submit", command=lambda e1=e1: get_choice(e1)).pack()  # Button to submit each choice
-
+    but.pack_forget()
 # Function to append choices to the opt_list
 def get_choice(entry):
     opt_list.append(entry.get())  
@@ -44,7 +44,8 @@ e = Entry(root, font=('Ariel', 20, 'bold'), bg='white', fg='black', width=28, bd
 e.pack()
 
 # Button to submit the number of choices
-Button(root, text="Submit", command=get_val).pack()
+but=Button(root, text="Submit", command=get_val)
+but.pack()
 
 # Button to randomly choose and display a choice
 Button(root, text="Get the choice", command=give_output).pack()
